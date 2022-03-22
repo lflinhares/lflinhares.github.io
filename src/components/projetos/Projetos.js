@@ -11,7 +11,7 @@ export default function Projetos() {
     },
     {
       name: "filtros",
-      link: "https://lflinhares.github.io/filters/",
+      link: "https://lflinhares.github.io/Ecommerce/",
       id: 2,
     },
     {
