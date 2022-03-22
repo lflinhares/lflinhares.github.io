@@ -127,9 +127,19 @@ table {
   border-spacing: 0;
 }
 body {
-  background-color: rgb(245, 245, 245);
-  color: rgb(0, 0, 0);
+  color: var(--text-color);
+  background-color: var(--bg);
   font-family: "Source Code Pro", monospace;
   font-weight: bold;
   letter-spacing: 0.05em;
+  transition: 200ms;
+}
+
+:root.dark {
+  --bg: #1b242b;
+  --text-color: rgb(202, 202, 202);
+}
+:root.light {
+  --bg: rgb(233, 233, 233);
+  --text-color: black;
 }

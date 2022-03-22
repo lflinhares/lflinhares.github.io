@@ -15,8 +15,8 @@ export default function Certificados() {
     <>
       <div className="certificados-container">
         {certificados.map((certificado) => (
-          <div className="certificado-amortecedor">
-            <div key={certificado.id}>
+          <div className="certificado-amortecedor" key={certificado.id}>
+            <div>
               <div
                 className={"certificado-class"}
                 onClick={() =>
@@ -53,17 +53,12 @@ export default function Certificados() {
                 draggable="false"
                 alt={certificado.name}
                 className={
-                  "certificado-pic " +
+                  "certificado-pic-full " +
                   (certificadoState === certificado.id
                     ? "pic-grow"
                     : "pic-shrink")
                 }
-                src={
-                  process.env.PUBLIC_URL +
-                  "/images/certificados/" +
-                  certificado.name +
-                  ".png"
-                }
+                src={"/images/certificados/" + certificado.name + ".png"}
               />
             </div>
           </div>
