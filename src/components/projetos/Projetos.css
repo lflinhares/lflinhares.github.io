@@ -1,0 +1,127 @@
+.projeto {
+  height: 336px;
+  width: 682px;
+  display: inline-block;
+}
+
+.zoomed-projetos {
+  width: 100%;
+  height: 100%;
+}
+.buttons {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #27343e;
+  color: #eb7d00;
+  font-size: 2em;
+  border: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.425);
+  transition: 50ms;
+}
+.buttons:hover {
+  cursor: pointer;
+}
+.buttons:active {
+  background-color: #384249;
+  height: 45px;
+  width: 45px;
+  font-size: 1.4em;
+}
+.amortecedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.projetos-carousel {
+  height: 336px;
+  width: 682px;
+  overflow: hidden;
+  transition: box-shadow 300ms;
+  margin: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.425);
+}
+.projetos-container {
+  display: flex;
+  width: fit-content;
+  background-color: #27343e;
+  transition: 200ms;
+}
+.caroussel-arrows {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .projeto {
+    box-sizing: border-box;
+    background-color: rgb(156, 156, 156);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    margin: auto;
+  }
+  .zoomed-projetos {
+    width: 100%;
+    height: auto;
+  }
+  .projetos-carousel {
+    position: relative;
+    width: 80vw;
+    height: fit-content;
+    display: block;
+    margin: 2px;
+    color: #eb7d00;
+  }
+  .buttons {
+    display: none;
+  }
+  .amortecedor {
+    display: none;
+  }
+  .caroussel-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border-radius: 50%;
+  }
+  .left {
+    width: 14px;
+    animation-name: arrows-left;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .right {
+    width: 10px;
+    animation-name: arrows-right;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes arrows-left {
+    from {
+      left: 0;
+    }
+    to {
+      left: 5px;
+    }
+  }
+  @keyframes arrows-right {
+    from {
+      right: 0;
+    }
+    to {
+      right: 5px;
+    }
+  }
+}
