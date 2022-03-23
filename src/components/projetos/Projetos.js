@@ -84,7 +84,7 @@ export default function Projetos() {
                 <img
                   draggable="false"
                   alt={projeto.name}
-                  className={"zoomed-projetos"}
+                  className="projeto-img"
                   src={
                     process.env.PUBLIC_URL +
                     `/images/projetos/` +
