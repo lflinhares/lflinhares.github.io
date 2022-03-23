@@ -92,7 +92,7 @@
 .contact-container {
   position: fixed;
   left: 96%;
-  top: 20%;
+  top: 30%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
@@ -119,15 +119,18 @@
 }
 
 @media (min-width: 1024px) {
+  .header {
+    justify-content: space-between;
+    align-items: center;
+  }
   .logo-container {
-    position: absolute;
-    right: 78%;
+    margin-left: 5vw;
   }
   .contact-container {
-    position: absolute;
-    left: 90%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    position: initial;
+    margin-top: 40px;
+    width: fit-content;
+    margin-right: 5vw;
     display: flex;
     flex-direction: row;
     align-items: center;
