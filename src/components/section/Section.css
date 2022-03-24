@@ -35,4 +35,8 @@ h2 {
   .habilidades {
     height: 100vh;
   }
+  .projetos-section {
+    max-height: fit-content;
+    min-height: fit-content;
+  }
 }
