@@ -25,6 +25,15 @@
 .slide-right {
   left: 90%;
 }
+.slide-right img {
+  transform: rotate(360deg);
+  transition: 500ms;
+}
+.slide-left img {
+  transform: rotate(-360deg);
+  transition: 500ms;
+}
+
 .slider-icon {
   height: 20px;
 }
@@ -35,8 +44,6 @@
     background-color: #27343e;
     margin-left: 4px;
     margin-top: 10px;
-  }
-  .slider {
   }
   .slide-left {
     top: 10%;
