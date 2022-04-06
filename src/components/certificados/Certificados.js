@@ -3,12 +3,14 @@ import { useState } from "react";
 export default function Certificados() {
   const [certificadoState, setCertificado] = useState(null);
   const certificados = [
-    { name: "javascript-essencial", id: 1 },
-    { name: "javascript-avancado", id: 2 },
-    { name: "introducao-git", id: 3 },
-    { name: "react-componentes", id: 4 },
-    { name: "react-encadeados", id: 5 },
-    { name: "react-hooks", id: 6 },
+    { name: "javascript-fcc", id: 1 },
+    { name: "javascript-basic-hackerrank", id: 2 },
+    { name: "javascript-essencial", id: 3 },
+    { name: "javascript-avancado", id: 4 },
+    { name: "introducao-git", id: 5 },
+    { name: "react-componentes", id: 6 },
+    { name: "react-encadeados", id: 7 },
+    { name: "react-hooks", id: 8 },
   ];
 
   return (
